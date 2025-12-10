@@ -1,0 +1,9 @@
+/home/Coder/Lml/CoopCredit/credit-application-service/src/test/java/com/coopcredit/domain/model/CreditApplicationTest.java
+/home/Coder/Lml/CoopCredit/credit-application-service/src/test/java/com/coopcredit/domain/model/UserTest.java
+/home/Coder/Lml/CoopCredit/credit-application-service/src/test/java/com/coopcredit/integration/CreditApplicationControllerIntegrationTest.java
+/home/Coder/Lml/CoopCredit/credit-application-service/src/test/java/com/coopcredit/integration/AbstractMockMvcTest.java
+/home/Coder/Lml/CoopCredit/credit-application-service/src/test/java/com/coopcredit/integration/repository/CreditApplicationRepositoryIntegrationTest.java
+/home/Coder/Lml/CoopCredit/credit-application-service/src/test/java/com/coopcredit/integration/service/CreditApplicationServiceIntegrationTest.java
+/home/Coder/Lml/CoopCredit/credit-application-service/src/test/java/com/coopcredit/integration/AuthControllerIntegrationTest.java
+/home/Coder/Lml/CoopCredit/credit-application-service/src/test/java/com/coopcredit/domain/model/AffiliateTest.java
+/home/Coder/Lml/CoopCredit/credit-application-service/src/test/java/com/coopcredit/integration/AbstractIntegrationTest.java

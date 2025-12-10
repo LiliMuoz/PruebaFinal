@@ -1,0 +1,52 @@
+server:
+  port: 0
+
+spring:
+  application:
+    name: credit-application-service-integration-test
+  
+  datasource:
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;MODE=PostgreSQL
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: 
+  
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+        dialect: org.hibernate.dialect.H2Dialect
+    open-in-view: false
+  
+  flyway:
+    enabled: false
+
+# JWT Configuration
+jwt:
+  secret: TestSecretKeyForJWTTokenGeneration2024SecureKeyMinimum256BitsForTesting
+  expiration: 86400000
+
+# Risk Service Configuration
+risk-service:
+  base-url: http://localhost:8081
+  timeout: 5000
+
+# Actuator Configuration
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: always
+
+# Logging Configuration
+logging:
+  level:
+    root: WARN
+    com.coopcredit: INFO
+    org.springframework.security: WARN

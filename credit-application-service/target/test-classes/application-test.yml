@@ -1,0 +1,52 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: credit-application-service-test
+  
+  datasource:
+    url: jdbc:postgresql://localhost:5432/coopcredit_test
+    username: test
+    password: test
+    driver-class-name: org.postgresql.Driver
+  
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+  
+  flyway:
+    enabled: false
+
+# JWT Configuration
+jwt:
+  secret: TestSecretKeyForJWTTokenGeneration2024SecureKeyMinimum256BitsForTesting
+  expiration: 86400000
+
+# Risk Service Configuration (will be mocked in tests)
+risk-service:
+  base-url: http://localhost:8081
+  timeout: 5000
+
+# Actuator Configuration
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: always
+
+# Logging Configuration
+logging:
+  level:
+    root: WARN
+    com.coopcredit: DEBUG
+    org.springframework.security: DEBUG

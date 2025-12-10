@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.coopcredit.integration.service.CreditApplicationServiceIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.009 s -- in com.coopcredit.integration.service.CreditApplicationServiceIntegrationTest

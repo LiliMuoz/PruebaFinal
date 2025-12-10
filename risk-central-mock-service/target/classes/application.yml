@@ -1,0 +1,21 @@
+server:
+  port: ${SERVICE_PORT:8081}
+
+spring:
+  application:
+    name: risk-central-mock-service
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: always
+
+logging:
+  level:
+    root: INFO
+    com.coopcredit.risk: DEBUG
+
